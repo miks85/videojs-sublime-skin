@@ -6,9 +6,20 @@
 .video-js
   background-color: black
   padding: 0
-  position: relative
+   position: fixed
+    overflow: hidden
+    z-index: 1000
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    width: 100% !important
+    height: 100% !important
+  &:-webkit-full-screen
+    width: 100% !important
+    height: 100% !important
   +user-select(none)
-  vertical-align: middle
+  vertical-align: top
 
   .vjs-tech
     +position(absolute, 0 null null 0)
